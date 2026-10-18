@@ -1,0 +1,9 @@
+#Crie um algoritmo que leia um número e mostre o seu dobro, triplo e raiz quadrada
+
+num = int(input("Digite um número e saiba seu dobro, triplo, e a sua raiz quadrada: "))
+
+dobro = num * 2
+triplo = num * 3
+raiz = num ** (1/2)
+
+print(f"O número que você digitou foi {num}, seu dobro é {dobro}, seu triplo é {triplo} e sua raiz é {raiz}")
