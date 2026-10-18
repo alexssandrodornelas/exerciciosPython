@@ -1,0 +1,9 @@
+#Desenvolva um programa que leia as duas notas de um aluno, calcule e mostre a sua média.
+
+n1 = float(input("Digite a primeira nota do aluno: "))
+n2 = float(input("Digite a segunda nota do aluno: "))
+
+soma = n1 + n2
+media = soma / 2
+
+print(f"O aluno tirou na primeira nota {n1} pontos, na segunda nota {n2} pontos, totalizando uma soma de {soma} pontos, sendo assim, o aluno tirou {media} pontos.")
