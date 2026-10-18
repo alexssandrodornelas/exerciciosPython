@@ -1,0 +1,7 @@
+#Escreva um programa que leia um valor em metros e o exiba convertido em centímetros e milímetros.
+
+m = float(input("Digite um valor em metros, e saiba a sua conversão em centímetro e milímetros: "))
+cm = m * 100
+mm = m * 1000
+
+print(f"{m} metros equivalem à {cm} cm e {mm} mm.")
