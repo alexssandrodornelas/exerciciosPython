@@ -1,0 +1,7 @@
+#Faça um algoritmo que leia o preço de um produto e mostre seu novo preço, com 5% de desconto.
+
+produto = float(input("Digite o valor do produto: R$ "))
+porcentagem = (produto * 5) / 100
+desconto = produto - porcentagem
+
+print(f"P o produto que custava R$ {produto:.2f}, com 5% de desconto passará a custar R$ {desconto:.2f}")
