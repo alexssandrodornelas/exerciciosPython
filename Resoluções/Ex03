@@ -10,3 +10,4 @@ print("É alfanumérico? ", a.isalnum()) # verificando se o dado inserido é alf
 print("Está em maiúsculas? ", a.isupper()) # verificando se o dado inserido está em maiúsculas.
 print("Está em minúsculas? ", a.islower()) # verificando se o dado inserido está em minúsculas.
 print("Está capitalizada? ", a.istitle()) # verificando se o dado inserido está capitalizado.
+
