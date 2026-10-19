@@ -5,3 +5,4 @@ real = 5.04
 dolar = dinheiro / real
 
 print(f"Com R$ {dinheiro}, você pode comprar $ {dolar:.2f}")
+
