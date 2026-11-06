@@ -1,0 +1,20 @@
+#Crie um programa que leia um número Real qualquer pelo teclado e mostre na tela a sua porção Inteira.
+
+
+#Podemos também para essa solução usar os recursos disponibilizados no própio Python, sem precisar de nenhuma biblioteca.
+
+'''num = float(input("Digite um número para saber a sua porção inteira: "))
+print(f"O número digitado foi {num}, e a sua porção inteira será: {int(num)}")'''
+
+# Importando a biblioteca completa.
+
+'''import math 
+num = float(input("Digite um número para saber a sua porção inteira: "))
+print(f"O número digitado foi {num}, e a sua porção inteirá será: {math.trunc(num)}")'''
+
+ # Importando apenas um ítem da biblioteca, deixando o código mais enxuto, e ocupando menos memória.
+
+from math import trunc
+num = float(input("Digite um número para saber a sua porça inteira: "))
+print(f"O número digitado foi {num} e a sua porção inteira será: {trunc(num)}")
+
