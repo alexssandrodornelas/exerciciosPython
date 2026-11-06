@@ -1,0 +1,10 @@
+#Faça um programa que leia um ângulo qualquer e mostre na tela o valor do seno, cosseno e tangente desse ângulo.
+
+import math
+an = int(input("Digite o ângulo de um triângulo e saiba as suas informações: "))
+seno = math.sin(math.radians(an)) # Calculando o seno, para converter em radiano.
+print(f"O Seno de um ângulo de {an}º graus é {seno:.2f}")
+cosseno = math.cos(math.radians(an)) # Calculando o cosseno, para converter em radiano.
+print(f"O Cosseno de um ângulo de {an}º graus é {cosseno:.2f}")
+tangente = math.tan(math.radians(an)) # Calculando o tangente, para convertendo ele em radiano
+print(f"A Tangente de um ângulo de {an}º graus é {tangente:.2f}")
