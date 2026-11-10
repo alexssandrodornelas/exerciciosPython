@@ -1,0 +1,10 @@
+#Desenvolva um programa que pergunte a distância de uma viagem em Km.
+#Calcule o preço da passagem, cobrando R$0,50 por Km para viagens de até 200Km e R$0,45 parta viagens mais longas.
+
+distancia = float(input("Digite de quantos KM são a sua viagem: "))
+
+if distancia <= 200:
+    print(f"Sua passagem rodando {distancia} KM,  sairá a R$ {distancia * 0.50}")
+else:
+    distancia > 201
+    print(f"Sua passagem rodando {distancia} KM, sairá à R$ {distancia * 0.45}")
