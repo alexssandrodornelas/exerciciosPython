@@ -1,0 +1,50 @@
+#Ex43 - Crie um programa que faça o computador jogar Jokenpô com você.
+
+from random import randint
+from time import sleep
+print("""Vamos brincar? Escolha uma opção!
+[0] Pedra
+[1] Papel
+[2] Tesoura
+""")
+item = ("pedra", "Papel", "Tesoura")
+computador = randint(0,2)
+jogador = int(input("Qual é a sua Jogada? "))
+
+print("-=" * 12)
+
+print("JO")
+sleep( 1)
+print("KEM")
+sleep(1)
+print("PO!!!")
+sleep(1)
+
+print("-=" * 12)
+
+print(f"Computador escolheu {(item[computador])} e você escolheu {(item[jogador])}")
+
+if computador == 0:
+    if jogador == 0:
+        print("EMPATE!!!")
+    if jogador == 1:
+        print("JOGADOR VENCEU!!!")
+    if jogador == 2:
+        print("COMPUTADOR VENCEU!!!")
+
+if computador == 1:
+    if jogador == 0:
+        print("JOGADOR VENCEU!!!")
+    if jogador == 1:
+        print("EMPATE!!!")
+    if jogador == 2:
+        print("COMPUTADOR VENCEU!!!")
+
+if computador == 2:
+    if jogador == 0:
+        print("COMPUTADOR VENCEU")
+    if jogador == 1:
+        print("JOGADOR VENCEU!!!")
+    if jogador == 2:
+        print("EMPATE!!!")
+print("-=" * 12)
