@@ -1,0 +1,35 @@
+print("--------------- SEJA BEM VINDO AS LOJAS DA LY --------------")
+print("-=-" * 20)
+
+compra = float(input("Informe o valor da compra: R$ "))
+
+print("""Escola uma opção de pagamento:
+[1] À vista no dinheiro / cheque 10 % de desconto
+[2] À vista no cartão 5 % de desconto.
+[3] Em 2 x no cartão: preço normal.
+[4] Em 3x ou mais no cartão 20 % de Juros.""")
+
+
+opcao = int(input("Informe qual a forma de pagamento: "))
+
+if opcao == 1:
+    print("Pagando a Vista no dinheiro ou no PIX! Você tem 10% de desconto")
+    print(f"Sua compra com o Valor de R$ {compra:.2f}, com 10% de desconto sairá à R$ {compra - ((compra * 10) / 100):.2f}")
+
+if opcao == 2:
+    print(f"Pagando à vista no cartão, você tem 5% de desconto.")
+    print(f"Sua compra com o valor de R$ {compra:.2f}, com 5 % de desconto sairá à R$ {compra - ((compra * 5) / 100):.2f}")
+
+if opcao == 3:
+    print("Pagando em 2x no cartão.")
+    print(f"Sua compra de R$ {compra:.2f}, você pagará 2 Parcelas de R$ {compra / 2:.2f} sem juros.")
+if opcao == 4:
+    parcelas = int(input("Quantas parcelas? "))
+    percentual = (compra * 20) / 100
+    juros = compra + percentual
+    tparcelas = juros / parcelas
+    print("Em 3x ou mais no cartão, terá juros de 10% sob a compra.")
+    print(f"Sua compra de R$ {compra:.2f}, com o Juros, você pagará R$ {juros:.2f}, com parcelas de R$ {tparcelas:.2f}")
+
+else:
+    print("Opção inválidade! Digite a opção desejada...")
