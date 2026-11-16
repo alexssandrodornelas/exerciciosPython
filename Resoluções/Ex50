@@ -1,0 +1,19 @@
+#Crie um programa que leia o ano de nascimento de sete pessoas. No final, mostre quantas pessoas ainda não atingiram a maioridade e quantas já são maiores.
+
+maioridade = 0
+menoridade = 0
+
+from datetime import date
+for c in range(1, 8):
+    atual = date.today().year
+    nasc = int(input((f"Digite o ano de nascimento da {c}ª Pessoa: ")))
+    idade = atual - nasc
+    if idade >= 18:
+        maioridade += 1
+        print("Essa pessoa é maior de idade.")
+    else:
+        menoridade += 1
+        print("Essa pessoa é menor de idade.")
+
+print(f"{maioridade} Pessoas são maiores de idade e {menoridade} Pessoas são menores de idade.")
+
